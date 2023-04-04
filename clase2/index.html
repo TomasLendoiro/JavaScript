@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Clase 2</title>
+    <style>
+        /*Aplicando CSS e forma interna*/
+        .titulo {
+            color: white;
+            background-color: teal;
+            text-align: center;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Aquí va todo nuestro código HTML-->
+    <h1 class="titulo">Bienvenid@s</h1>
+
+    <script>
+        //Aplicando JS de forma interna
+        /*===
+        Aquí
+        va el código 
+        JavaScript 
+        ===*/
+        //Esto es otro comentario - Deben repasar en el alumni el módulo 1
+        //Variables
+        //var nombre = 'Daniel';
+        //var apellido = 'Fuentes';
+        //var edad = 56;
+
+        //Objeto window: Pantalla donde activamos nuestro sitio web
+        console.log(window);
+        //Objeto document: Todo nuestro cpodigo HTML
+        console.log(document);
+
+
+
+        //Usando el Prompt()
+        var nombre = prompt('Indique su nombre');
+        var apellido = prompt('Indique su apellido');
+
+        //El console.log() se utiliza para verificar como voy en mi programa
+        //Para determinar algún calculo u operación que desarrolle
+        console.log('Mi nombre es ' + nombre + ' y mi apellido es ' + apellido);
+        document.write('<h2 class="titulo">' + 'Mi nombre es ' + nombre + ' y mi apellido es ' + apellido + '</h2>');
+        // Desafío: Pedir por pantalla dos valores y ejecutar con ellos una suma
+        // ======================================================================
+        //Enviado por Lucas
+        //Esto se llama parsear los datos
+        var valor1 = Number(prompt("indique el primer valor"))
+        var valor2 = Number(prompt("indique el segundo valor"))
+
+        //valor1 = Number(valor1)
+        //valor2 = Number(valor2)
+        var resultado = valor1 + valor2
+
+        //Mostrando el valor por la consola
+        console.log("el resultado de sumar "+ valor1 + " mas "+ valor2 +" es: " + resultado)
+        //Mostrando el valor por el navegador
+        document.write("<h3 class='titulo'>" +"el resultado de sumar "+ valor1 + " mas "+ valor2 +" es: " + resultado+"</h3>")
+        //Mostrando en valor en una pantalla aparte
+        window.alert("el resultado de sumar "+ valor1 + " mas "+ valor2 +" es: " + resultado);
+    </script>
+</body>
+
+</html>
